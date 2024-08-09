@@ -1,0 +1,142 @@
+body * {
+    margin: 0;
+    font-family: "Poppins";
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 42, 62);
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    gap: 25px;
+}
+
+#container h1 {
+    font-family: "Bungee Spice";
+    font-size: 30px;
+    letter-spacing: 0.25rem;
+}
+
+.inputData {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 5px;
+    gap: 10px;
+}
+
+.inputData label {
+    font-family: "Bungee Spice";
+    text-align: center;
+    font-size: 22.5px;
+}
+
+.inputData input {
+    text-align: center;
+    padding: 7.5px 0px;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputData input:focus {
+    border: none;
+    outline: none;
+}
+
+.inputZScore {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.inputZScore label {
+    font-family: "Bungee Spice";
+}
+
+.inputZScore div {
+    display: flex;
+    flex-direction: column;
+    font-size: 22.5px;
+    text-align: center;
+    gap: 5px;
+}
+
+.inputZScore input {
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 7.5px 0px;
+}
+
+.inputZScore input:focus {
+    border: none;
+    outline: none;
+}
+
+.buttonList {
+    display: flex;
+    gap: 35px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.buttonList button {
+    border: none;
+    border-radius: 15px;
+    padding: 7px 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    width: 70px;
+    box-shadow: 6.5px 7.5px;
+}
+
+.buttonList button:active {
+    position: relative;
+    left: 6.5px;
+    top: 7.5px;
+    box-shadow: none;
+}
+
+.buttonList button:hover {
+    cursor: pointer;
+}
+
+.buttonList [id="hitung"]{
+    background-color: rgb(255, 237, 0);
+}
+
+.buttonList [id="reset"]{
+    background-color: rgb(22, 255, 0);
+}
+
+#summaryData {
+    display: none;
+    width: 75%;
+    gap: 2.5px;
+    padding: 2.5px;
+    margin-top: 50px;
+}
+
+#summaryData *{
+    flex: 1;
+    font-size: 17.5px;
+    font-family: "Bungee Spice";
+    text-align: center;
+}
+
+svg {
+    width: 100%;
+    display: none;
+}

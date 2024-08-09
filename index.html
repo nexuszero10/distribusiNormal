@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribusi Normal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Distribusi Normal Kontinu</h2>
+        
+        <div class="inputData">
+            <label for="data">Input Data</label>
+            <input type="text" id="data" placeholder="input angka dengan pemisah koma (,)">
+            <p id="dataInvalid"></p>
+        </div>
+        
+        <div class="inputZScore">
+            <div class="inputZ1">
+                <label for="z1">Z-Score 1</label>
+                <input type="number" id="z1" placeholder="input Z1">
+                <p id="z1invalid"></p>
+            </div>
+            <div class="inputZ2">
+                <label for="z2">Z-Score 2</label>
+                <input type="number" id="z2" placeholder="input Z2">
+                <p id="z2invalid"></p>
+            </div>
+        </div>
+
+        <div class="buttonList">
+            <button id="hitung">HITUNG</button>
+            <button id="reset">RESET</button>
+        </div>
+        
+        <div id="summaryData">
+            <p>Rata - rata<br><span id="meanNormal"></span></p>
+            <p>Standar Deviasi<br><span id="deviasiNormal"></span></p>
+            <p>Peluang Baku <br><span id="nilaiPeluang"></span></p>
+        </div>
+        
+        <svg id="grafikNormal" width="850" height="700" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
